@@ -23,8 +23,8 @@ public class GetSecretValue
         {
             string secretName = FileUtils.GetConfig();
             string secret;
-            Console.WriteLine(secretName);
-            IAmazonSecretsManager client = new AmazonSecretsManagerClient();
+            FileUtils.WriteLine(secretName);
+            IAmazonSecretsManager client = new AmazonSecretsManagerClient(Amazon.RegionEndpoint.APSoutheast1);
 
             var response = await GetSecretAsync(client, secretName);
 
@@ -34,19 +34,17 @@ public class GetSecretValue
 
                 if (!string.IsNullOrEmpty(secret))
                 {
-                    Console.WriteLine("The decoded secret value is: " + secret);
+                    FileUtils.WriteLine("The decoded secret value is: " + secret);
                 }
                 else
                 {
-                    Console.WriteLine("No secret value was returned.");
+                    FileUtils.WriteLine("No secret value was returned.");
                 }
             }
-            Console.ReadLine();
         }
         catch (Exception ex)
         {
-            Console.WriteLine(ex.ToString());
-            Console.ReadLine();
+            FileUtils.WriteLine(ex.ToString());
         }
        
     }
@@ -78,7 +76,7 @@ public class GetSecretValue
         }
         catch (AmazonSecretsManagerException e)
         {
-            Console.WriteLine($"Error: {e.Message}");
+            FileUtils.WriteLine($"Error: {e.Message}");
         }
 
         return response;

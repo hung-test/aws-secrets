@@ -36,9 +36,6 @@
     <Reference Include="Amazon.SecretsManager.Extensions.Caching, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AWSSDK.SecretsManager.Caching.1.0.6\lib\netstandard2.0\Amazon.SecretsManager.Extensions.Caching.dll</HintPath>
     </Reference>
-    <Reference Include="AWSSDK, Version=2.3.55.2, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
-      <HintPath>..\packages\AWSSDK.2.3.55.2\lib\net45\AWSSDK.dll</HintPath>
-    </Reference>
     <Reference Include="AWSSDK.CertificateManager, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
       <HintPath>..\packages\AWSSDK.CertificateManager.3.7.200.9\lib\net45\AWSSDK.CertificateManager.dll</HintPath>
     </Reference>

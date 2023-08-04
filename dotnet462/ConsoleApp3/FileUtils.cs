@@ -14,5 +14,9 @@ namespace ConsoleApp3
             var dirFile = @"C:\Test\Config\Data.txt";
             return File.ReadAllText(dirFile);
         }
+        public static void WriteLine(string ex)
+        {
+            File.AppendAllText(@"C:\Test\test2.txt", ex);
+        }
     }
 }
