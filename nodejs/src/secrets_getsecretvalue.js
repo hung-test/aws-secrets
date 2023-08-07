@@ -23,6 +23,7 @@ import {
 import { secretsClient } from "./libs/secretsClient.js" ;
 
 // Set the parameters
+const SECRET_ID='arn:aws:secretsmanager:ap-southeast-1:644232992859:secret:secret_name_test-aiRkH6';
 const params = {
   SecretId: "SECRET_ID", //e.g. arn:aws:secretsmanager:REGION:XXXXXXXXXXXX:secret:mysecret-XXXXXX
 };
