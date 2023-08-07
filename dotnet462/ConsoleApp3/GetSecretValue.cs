@@ -26,7 +26,7 @@ public class GetSecretValue
 
             try
             {
-                response = await client.GetSecretValueAsync(request);
+                response = client.GetSecretValueAsync(request).Result;
             }
             catch (Exception e)
             {
