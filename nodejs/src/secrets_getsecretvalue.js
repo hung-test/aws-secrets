@@ -20,12 +20,11 @@ node secrets_getsecretvalue.js
 import {
   GetSecretValueCommand,
 } from "@aws-sdk/client-secrets-manager";
-import { secretsClient } from "./libs/secretsClient.js" ;
+import { secretsClient } from "./libs/secretsClient.js";
 
 // Set the parameters
-const SECRET_ID='arn:aws:secretsmanager:ap-southeast-1:644232992859:secret:secret_name_test-aiRkH6';
 const params = {
-  SecretId: "SECRET_ID", //e.g. arn:aws:secretsmanager:REGION:XXXXXXXXXXXX:secret:mysecret-XXXXXX
+  SecretId: "arn:aws:secretsmanager:ap-southeast-1:644232992859:secret:secret_name_test-aiRkH6", //e.g. arn:aws:secretsmanager:REGION:XXXXXXXXXXXX:secret:mysecret-XXXXXX
 };
 
 const run = async () => {
