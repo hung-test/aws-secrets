@@ -1,1 +1,1 @@
-﻿c3m53m5
+﻿arn:aws:secretsmanager:ap-southeast-1:644232992859:secret:secret_name_test-aiRkH6
